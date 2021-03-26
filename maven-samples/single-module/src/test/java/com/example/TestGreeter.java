@@ -27,17 +27,13 @@ public class TestGreeter {
   @Test
   public void greetShouldIncludeGreetingPhrase() {
     String someone = "World";
-  @Test
-  public void greetShouldIncludeGreetingMessage() {
-    String someone = "World, welcome to the auto trigger job";
 
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
 
     @Test
   public void greetShouldIncludeGreetingMessage() {
-    String someone = "World, Thanks you making me Happy";
-  }
+    String someone = "World, Thanks you making me Happy with auto build";
 
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
